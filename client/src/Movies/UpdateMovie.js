@@ -61,8 +61,8 @@ const handleStars = event => {
 
   return (
     <div>
-      <h2>Update Movie</h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className='form'>Update Movie</h2>
+      <form className='form' onSubmit={handleSubmit} >
         <input
           type="text"
           name="title"

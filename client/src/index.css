@@ -53,6 +53,7 @@ body {
   width: 75%;
   margin: 1rem auto;
 }
+
 .save-button {
   position: absolute;
   top: 25px;
@@ -61,7 +62,16 @@ body {
   padding: 5px 10px;
   background-color: lightseagreen;
 }
-.save-button:hover {
+
+
+.otherButtons{
+  top: 25px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+.otherButtons:hover {
   background-color: green;
   color: white;
 }
@@ -69,9 +79,19 @@ body {
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
 }
 
 .movie-warning {
   color: red;
+  text-align: center;
+}
+
+.form{
+  width: 20%;
+  margin: 0 auto;
+  border: 5px double teal;
   text-align: center;
 }

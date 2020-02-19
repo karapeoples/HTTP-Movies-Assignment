@@ -51,17 +51,16 @@ export default class Movie extends React.Component {
 			<div>
 				<div className="save-wrapper">
 					<MovieCard movie={this.state.movie} />
-					<div className="save-button" onClick={this.saveMovie}>
-						Save
-					</div>
-
-					<div>
-						<button onClick={() => this.props.history.push(`/update-movie/${this.state.movie.id}`)}>Edit</button>
+					<div className="save-button"><button className="otherButtons" onClick={this.saveMovie}>
+						Save</button>
 					
-						<button onClick={this.handleDelete}>Delete</button>
+						<button className='otherButtons' onClick={() => this.props.history.push(`/update-movie/${this.state.movie.id}`)}>Edit </button>
+					
+						<button className='otherButtons' onClick={this.handleDelete}>X</button>
+					</div>
 					</div>
 				</div>
-			</div>
+			
 		);
 	}
 }
