@@ -12,6 +12,7 @@ const initialItem = {
 };
 
 const UpdateMovie = props => { 
+  
   const [movie, setMovie] = useState(initialItem);
   const { id } = useParams();
   
