@@ -12,7 +12,7 @@ const initialItem = {
 };
 
 const UpdateMovie = props => { 
-  
+
   const [movie, setMovie] = useState(initialItem);
   const { id } = useParams();
   
@@ -49,8 +49,8 @@ const handleStars = event => {
   })
 }
 
-  const handleSubmit = e => {
-    e.preventDefault();
+const handleSubmit = e => {
+  e.preventDefault();
   axios
   .put(`http://localhost:5000/api/movies/${id}`, movie)
   .then(res => {

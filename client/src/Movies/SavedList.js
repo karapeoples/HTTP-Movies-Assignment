@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 export default class SavedList extends Component {
- 
-
+  
   render() {
     return (
       <div className="saved-list">
@@ -13,9 +12,9 @@ export default class SavedList extends Component {
             <NavLink
               to={`/movies/${movie.id}`}
               key={movie.id}
-              activeClassName="saved-active"
-            >
-              <span className="saved-movie">{movie.title}</span>
+              activeClassName="saved-active">
+                <span className="saved-movie">{movie.title}</span>
+              <span onClick={`${movie}.remove()`}>X</span>
             </NavLink>
           );
         })}
