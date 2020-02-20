@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 export default class SavedList extends Component {
+
+  
+
   
   render() {
     return (
@@ -13,9 +16,8 @@ export default class SavedList extends Component {
               to={`/movies/${movie.id}`}
               key={movie.id}
               activeClassName="saved-active">
-                <span className="saved-movie">{movie.title}</span>
-              <span onClick={`${movie}.remove()`}>X</span>
-            </NavLink>
+                <span  className="saved-movie">{movie.title}</span><span onClick='remove'>X</span>
+            </NavLink> 
           );
         })}
         <div className="home-button">
